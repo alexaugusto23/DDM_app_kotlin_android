@@ -11,5 +11,6 @@ Criação De Aplicativo para Android Studio com base nas aulas de Desenvolviment
 -- Subindo Alterações
 * git push origin AC02
 
-
-
+-- Trocando de Branch
+* git checkout AC02
+* git checkout main
