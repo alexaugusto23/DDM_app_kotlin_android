@@ -1,7 +1,7 @@
 # DDM_app_kotlin_android
 Criação De Aplicativo para Android Studio com base nas aulas de Desenvolvimento Dispositivos Móveis.
 
-Objetivos:
+##### Objetivos:
 
 * Criar o projeto do aplicativo final do curso (Baseado na OPE ou outro projeto)
 
@@ -25,15 +25,15 @@ Objetivos:
 
 * Disponibilizar o projeto no GitHub ou similar para a avaliação da atividade
 
--- Criando Branchs:
+##### Criando Branchs:
 * git branch AC02
 * git branch AC03
 * git branch AC04
 * git branch AC05
 
--- Subindo Alterações
+##### Subindo Alterações:
 * git push origin AC02
 
--- Trocando de Branch
+##### Trocando de Branch:
 * git checkout AC02
 * git checkout main
