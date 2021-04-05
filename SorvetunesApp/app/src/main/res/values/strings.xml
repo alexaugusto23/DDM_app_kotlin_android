@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">SorvetunesApp</string>
+    <string name="app_name">Sorvetunes</string>
+    <string name="mensagem_inicial">Bem Vindo!!! ao \n Sorvetunes</string>
 </resources>
