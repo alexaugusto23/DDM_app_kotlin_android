@@ -5,16 +5,51 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageview_login"
         android:layout_width="match_parent"
-        android:layout_height="272dp"
-        app:srcCompat="@drawable/img_sorvete_01" />
+        android:layout_height="272dp" />
+
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="31dp"
-        android:text="@string/mensagem_login" />
+        android:layout_height="40dp"
+        android:text="@string/mensagem_login"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/mensagem_login_usuario" />
+
+    <EditText
+        android:id="@+id/input_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:inputType="textPersonName"
+        android:hint="@string/text_input_user"/>
+
+    <TextView
+        android:id="@+id/text_password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/mensagem_login_senha" />
+
+    <EditText
+        android:id="@+id/input_assword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:inputType="textPassword"
+        android:hint="@string/text_input_password"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/botao_user" />
 
 
 </LinearLayout>
