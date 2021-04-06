@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Sorvetunes</string>
     <string name="mensagem_inicial">Bem Vindo!!! ao Sorvetunes</string>
-    <string name="mensagem_login">Faça o seu login!</string>
+    <string name="mensagem_login">Seja Bem vindo!!!</string>
     <string name="mensagem_login_usuario">Usuário:</string>
     <string name="mensagem_login_senha">Senha:</string>
 
@@ -10,7 +10,7 @@
     <string name="text_input_password">Digite a sua Senha.</string>
 
     <!-- Botões -->
-    <string name="botao_user">Faça Login.</string>
+    <string name="botao_user">Login</string>
 
     <!-- <string name=""></string> -->
 </resources>
