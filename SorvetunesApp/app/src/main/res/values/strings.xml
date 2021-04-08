@@ -12,6 +12,7 @@
     <!-- Botões -->
     <string name="botao_user">Login</string>
     <string name="botao_voltar_login">Voltar para Login</string>
+    <string name="title_activity_settings">SettingsActivity</string>
 
-    <!-- <string name=""></string> -->
+
 </resources>

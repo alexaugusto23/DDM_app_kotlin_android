@@ -6,20 +6,31 @@
         android:id="@+id/nav_bar_search"
         android:icon="@drawable/ic_search"
         android:title="Buscar"
-        app:showAsAction="ifRoom"/>
+        app:showAsAction="always"/>
 
     <item
         android:id="@+id/nav_bar_add"
         android:icon="@drawable/ic_add"
         android:title="Adicionar"
-        app:showAsAction="ifRoom"/>
+        app:showAsAction="always"/>
 
     <item
         android:id="@+id/nav_bar_update"
         android:icon="@drawable/ic_update"
         android:title="Atualizar"
-        app:showAsAction="ifRoom"/>
+        app:showAsAction="always"/>
 
+    <item
+        android:id="@+id/nav_bar_config"
+        android:icon="@drawable/ic_config"
+        android:title="Configurações"
+        app:showAsAction="never"/>
+
+        <!-- android:icon="@drawable" -->
+        <!--always, never, iRoom
+         -->
+        <!-- -->
+        <!-- -->
         <!-- app:actionViewClass="android.widget.SearchView" />-->
 
 </menu>
