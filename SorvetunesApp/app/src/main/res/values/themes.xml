@@ -16,6 +16,7 @@
     <style name="Theme.Toolbar" parent="Theme.SorvetunesApp">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+        <item name="android:textColor">@color/black</item>
 
     </style>
 </resources>
