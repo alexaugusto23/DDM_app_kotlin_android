@@ -6,7 +6,9 @@
         android:id="@+id/nav_bar_search"
         android:icon="@drawable/ic_search"
         android:title="Buscar"
-        app:showAsAction="always"/>
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="android.widget.SearchView"
+        />
 
     <item
         android:id="@+id/nav_bar_add"
@@ -26,6 +28,7 @@
         android:title="Configurações"
         app:showAsAction="never"
         android:actionLayout="@color/black"/>
+
 
 
         <!-- android:icon="@drawable" -->
