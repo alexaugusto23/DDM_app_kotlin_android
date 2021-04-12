@@ -6,6 +6,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.ArrayAdapter
 import android.widget.SearchView
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_home.*
@@ -21,6 +22,7 @@ class HomeActivity : DebugActivity() {
         val args = intent.extras
         val usuario = args?.getString("usuario")
         val numero = args?.getString("senha")
+
 
         Toast.makeText(this, usuario, Toast.LENGTH_SHORT).show()
         Toast.makeText(this, numero, Toast.LENGTH_SHORT).show()
@@ -82,7 +84,8 @@ class HomeActivity : DebugActivity() {
             }
 
             override fun onQueryTextChange(newText: String?): Boolean {
-                return false
+                Toast.makeText(this@HomeActivity, "Procurando por $newText", Toast.LENGTH_SHORT).show()
+                return true
             }
         })
 
