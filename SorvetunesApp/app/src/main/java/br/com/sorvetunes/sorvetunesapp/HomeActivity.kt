@@ -1,5 +1,7 @@
 package br.com.sorvetunes.sorvetunesapp
 
+import android.app.SearchManager
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
@@ -32,29 +34,6 @@ class HomeActivity : DebugActivity() {
         setSupportActionBar(toolbar)
         supportActionBar?.title = "Home"
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-
-
-
-    }
-
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.nav_menu, menu)
-
-        (menu?.findItem(R.id.nav_bar_search)?.actionView as SearchView?)?.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
-
-                override fun onQueryTextChange(newText: String): Boolean {
-                    // ação enquanto está digitando
-                    return false
-                }
-
-                override fun onQueryTextSubmit(query: String): Boolean {
-                    // ação  quando terminou de buscar e enviou
-                    return false
-                }
-
-            })
-
-        return true
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -80,5 +59,33 @@ class HomeActivity : DebugActivity() {
             R.id.nav_bar_config -> Toast.makeText(this, "atualizar", Toast.LENGTH_SHORT).show()
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+
+        val inflater = menuInflater
+        inflater.inflate(R.menu.nav_menu, menu)
+
+        val manager = getSystemService(Context.SEARCH_SERVICE) as SearchManager
+        val searchItem = menu?.findItem(R.id.nav_bar_search)
+        val searchView = searchItem?.actionView as SearchView
+
+        searchView.setSearchableInfo(manager.getSearchableInfo(componentName))
+
+        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                searchView.clearFocus()
+                searchView.setQuery("", false)
+                searchItem.collapseActionView()
+                Toast.makeText(this@HomeActivity, "Procurando por $query", Toast.LENGTH_SHORT).show()
+                return true
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
+                return false
+            }
+        })
+
+        return true
     }
 }
