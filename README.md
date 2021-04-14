@@ -16,14 +16,19 @@ Empresa de sorvetes Sorvetunes.
 AC03
 
 Objetivos:
+
     • Aplicar os conceitos de Notificações e Push, e Mapas
+
     Grupo: Esta atividade deve ser feita em grupo, o mesmo grupo de desenvolvimento do aplicativo
     final da disciplina.
     Prazo:
 
 Descrição: Nesta atividade você deve fazer o seguinte (pelo menos):
+
     • Implementar algum tipo de notificação e push
+
     • Implementar uma tela com um mapa de localização
+    
     • Utilize o mesmo repositório das ACs anteriores, colocando esta tarefa na branch AC05.
 
 Atenção: utilize o mesmo repositório até o final da disciplina. Após a correção e disponibiliza-
