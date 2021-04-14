@@ -13,40 +13,19 @@ Criação De Aplicativo para Android Studio com base nas aulas de Desenvolviment
 ### Projeto:
 Empresa de sorvetes Sorvetunes.
 
+AC03
 
-##### Objetivos:
+Objetivos:
+    • Aplicar os conceitos de Notificações e Push, e Mapas
+    Grupo: Esta atividade deve ser feita em grupo, o mesmo grupo de desenvolvimento do aplicativo
+    final da disciplina.
+    Prazo:
 
-* Criar o projeto do aplicativo final do curso (Baseado na OPE ou outro projeto)
+Descrição: Nesta atividade você deve fazer o seguinte (pelo menos):
+    • Implementar algum tipo de notificação e push
+    • Implementar uma tela com um mapa de localização
+    • Utilize o mesmo repositório das ACs anteriores, colocando esta tarefa na branch AC05.
 
-* Aplicar os conceitos básicos de desenvolvimento de um aplicativo para o Android
-
-* Criação e configuração do projeto
-
-* Utilização de Activity
-
-* Utilizar elementos de tela
-
-* Vincular e tratar eventos
-
-* Aplicar os conceitos de Action Bar vistos em aula
-
-* Aplicar os conceitos de Layout e Views
-
-* Aplicar os conceitos de cores para criar a identidade visual do App
-
-* Criar algumas telas para navegar no app
-
-* Disponibilizar o projeto no GitHub ou similar para a avaliação da atividade
-
-##### Criando Branchs:
-* git branch AC02
-* git branch AC03
-* git branch AC04
-* git branch AC05
-
-##### Subindo Alterações:
-* git push origin AC02
-
-##### Trocando de Branch:
-* git checkout AC02
-* git checkout main
+Atenção: utilize o mesmo repositório até o final da disciplina. Após a correção e disponibiliza-
+ção da nota das atividades, elas não serão revistas caso estejam em um repositório diferentedo cadastrado no form ulário da tarefa. Se houver mudança de repositório avisar em aula an-
+tes da tarefa ser corrigida.
