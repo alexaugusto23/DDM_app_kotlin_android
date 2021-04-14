@@ -1,0 +1,16 @@
+Trocar de branch
+git checkout AC02
+
+Cria branch a partir da anterior
+git checkout -b AC03
+
+Atualiza o branch na nuvem
+git push --set-upstream origin AC03
+
+
+Deletar o branch na nuvem
+git push origin --delete AC05
+
+Deletar o branch localmente
+git branch -d AC05    #deleta 
+git branch -D AC05   # força deletar
