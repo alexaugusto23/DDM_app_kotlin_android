@@ -9,19 +9,23 @@
         android:layout_width="match_parent"
         android:layout_height="272dp" />
 
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:text="@string/mensagem_login"
-        android:textAlignment="center"/>
+        android:textAlignment="center"
+        android:layout_marginTop="22dp"
+        android:textSize="18sp"
+        />
 
     <TextView
         android:id="@+id/user"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:text="@string/mensagem_login_usuario" />
+        android:text="@string/mensagem_login_usuario"
+        android:textSize="18sp"
+        />
 
     <EditText
         android:id="@+id/input_user"
@@ -35,21 +39,41 @@
         android:id="@+id/text_password"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:text="@string/mensagem_login_senha" />
+        android:text="@string/mensagem_login_senha"
+        android:textSize="18sp"
+        android:layout_marginTop="12dp"
+        />
 
     <EditText
         android:id="@+id/input_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="15"
-        android:inputType="textPassword"
-        android:hint="@string/text_input_password"/>
+        android:hint="@string/text_input_password"
+        android:inputType="textPassword" />
 
-    <Button
-        android:id="@+id/botao_login"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/botao_user" />
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/botao_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/botao_user"
+            android:layout_marginTop="20dp"
+            android:stateListAnimator="@null"
+            />
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            />
+
+    </FrameLayout>
+
 
 
 </LinearLayout>
