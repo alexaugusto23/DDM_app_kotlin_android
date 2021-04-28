@@ -13,6 +13,25 @@
     <string name="botao_user">Login</string>
     <string name="botao_voltar_login">Voltar para Login</string>
     <string name="title_activity_settings">SettingsActivity</string>
+    <string name="sobre_sorvetunes">A Sovertunes é uma empresa com
+        mais 5 anos de experiência na fabricação de sorvetes. Sempre
+        trazendo novidades de sabores e texturas para alegar a vida
+        de seus clientes, sempre com qualidade em seus processos
+        de fabricação.\n
 
+        \nGosta de sorvetes adocicados, supercremosos e feitos com
+        ingredientes de qualidade? O seu lugar é aqui. Sempre de
+        olho na produção, a Sovertunes sugere sua linha
+        de sabores criativos.\n
 
+        \nVeja nossos produtos!!!\n
+
+        \n  * Açaís \n
+        \n  * Sorvetes de Potes \n
+        \n  * Sorvetes de massa \n
+        \n  * Paletas \n
+        \n  * Picolés \n
+        \n  * Delicias Gelatas \n
+        \n  * Casquinhas \n
+    </string>
 </resources>

@@ -23,13 +23,18 @@
         app:showAsAction="always"/>
 
     <item
+        android:id="@+id/nav_bar_sobre"
+        android:icon="@drawable/ic_business_sobre"
+        android:title="Sobre"
+        app:showAsAction="never"
+        android:actionLayout="@color/black"/>
+
+    <item
         android:id="@+id/nav_bar_config"
         android:icon="@drawable/ic_config"
         android:title="Configurações"
         app:showAsAction="never"
         android:actionLayout="@color/black"/>
-
-
 
         <!-- android:icon="@drawable" -->
         <!--always, never, iRoom

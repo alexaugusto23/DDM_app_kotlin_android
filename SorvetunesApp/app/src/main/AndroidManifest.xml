@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SorvetunesApp">
-        <activity android:name=".MainActivity2"></activity>
+        <activity
+            android:name=".SobreActivity"
+            android:theme="@style/Theme.Toolbar" />
         <activity android:name=".ConfigActivity" />
         <activity
             android:name=".HomeActivity"

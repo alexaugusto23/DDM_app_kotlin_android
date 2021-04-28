@@ -3,14 +3,14 @@ package br.com.sorvetunes.sorvetunesapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.login.*
+import kotlinx.android.synthetic.main.activity_login.*
 import android.widget.Toast
 
 class MainActivity : DebugActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.login)
+        setContentView(R.layout.activity_login)
         imageview_login.setImageResource(R.drawable.img_sorvete_01)
 
         botao_login.setOnClickListener{

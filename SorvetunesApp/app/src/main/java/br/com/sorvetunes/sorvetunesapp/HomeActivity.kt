@@ -6,11 +6,10 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.ArrayAdapter
 import android.widget.SearchView
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_home.*
-import kotlinx.android.synthetic.main.login.*
+import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.toolbar.*
 
 
@@ -44,6 +43,10 @@ class HomeActivity : DebugActivity() {
         if ( id == R.id.nav_bar_search){}
         else if (id == R.id.nav_bar_add) {}
         else if (id == R.id.nav_bar_update) {}
+        else if (id == R.id.nav_bar_sobre) {
+            var intent_sobre = Intent(this, SobreActivity::class.java)
+            startActivity(intent_sobre)
+        }
         else if (id == R.id.nav_bar_config) {
             var intent_config = Intent(this, ConfigActivity::class.java)
             startActivity(intent_config)
@@ -58,6 +61,7 @@ class HomeActivity : DebugActivity() {
             R.id.nav_bar_search -> Toast.makeText(this, "pesquisar", Toast.LENGTH_SHORT).show()
             R.id.nav_bar_add -> Toast.makeText(this, "adicionar", Toast.LENGTH_SHORT).show()
             R.id.nav_bar_update -> Toast.makeText(this, "atualizar", Toast.LENGTH_SHORT).show()
+            R.id.nav_bar_sobre -> Toast.makeText(this, "sobre", Toast.LENGTH_SHORT).show()
             R.id.nav_bar_config -> Toast.makeText(this, "atualizar", Toast.LENGTH_SHORT).show()
         }
         return super.onOptionsItemSelected(item)
@@ -68,7 +72,7 @@ class HomeActivity : DebugActivity() {
         val inflater = menuInflater
         inflater.inflate(R.menu.nav_menu, menu)
 
-        val manager = getSystemService(Context.SEARCH_SERVICE) as SearchManager
+        val manager = getSystemService(SEARCH_SERVICE) as SearchManager
         val searchItem = menu?.findItem(R.id.nav_bar_search)
         val searchView = searchItem?.actionView as SearchView
 
