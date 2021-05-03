@@ -11,6 +11,7 @@
 
     <!-- Botões -->
     <string name="botao_user">Login</string>
+    <string name="botao_voltar_home">Voltar para Home</string>
     <string name="botao_voltar_login">Voltar para Login</string>
     <string name="title_activity_settings">SettingsActivity</string>
     <string name="sobre_sorvetunes">A Sovertunes é uma empresa com
