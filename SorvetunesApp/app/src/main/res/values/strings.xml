@@ -34,4 +34,6 @@
         \n  * Delicias Gelatas \n
         \n  * Casquinhas \n
     </string>
+    <string name="drawer_open">Aberto</string>
+    <string name="drawer_close">Fechado</string>
 </resources>

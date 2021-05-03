@@ -8,12 +8,15 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.SearchView
 import android.widget.Toast
+import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.core.view.GravityCompat
+import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.toolbar.*
 
 
-class HomeActivity : DebugActivity() {
+class HomeActivity : DebugActivity(), NavigationView.OnNavigationItemSelectedListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
@@ -35,6 +38,49 @@ class HomeActivity : DebugActivity() {
         setSupportActionBar(toolbar)
         supportActionBar?.title = "Home"
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        configuraMenuLateral()
+
+    }
+
+    private fun configuraMenuLateral(){
+        var toogle = ActionBarDrawerToggle(
+                this,
+                layoutMenuLateral,
+                toolbar,
+                R.string.drawer_open,
+                R.string.drawer_close
+        )
+        layoutMenuLateral.addDrawerListener(toogle)
+        toogle.syncState()
+
+        menu_lateral.setNavigationItemSelectedListener(this)
+    }
+
+    override fun onNavigationItemSelected(item: MenuItem): Boolean {
+
+        when(item.itemId){
+            R.id.nav_admin ->{
+                var intent_admin = Intent(this, AdminActivity::class.java)
+                startActivity(intent_admin)
+                Toast.makeText(this, "Clicou no Admin", Toast.LENGTH_SHORT).show()}
+
+            R.id.nav_produtos -> {
+                var intent_produtos = Intent(this, ProdutosActivity::class.java)
+                startActivity(intent_produtos)
+                Toast.makeText(this, "Clicou no Produto", Toast.LENGTH_SHORT).show()
+            }
+
+            R.id.nav_pedidos -> {
+                var intent_pedidos = Intent(this, PedidosActivity::class.java)
+                startActivity(intent_pedidos)
+                Toast.makeText(this, "Clicou no Pedido", Toast.LENGTH_SHORT).show()
+            }
+
+        }
+
+        layoutMenuLateral.closeDrawer(GravityCompat.START)
+
+        return true
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
