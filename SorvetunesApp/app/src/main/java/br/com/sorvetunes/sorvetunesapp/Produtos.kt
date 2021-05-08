@@ -1,6 +1,8 @@
 package br.com.sorvetunes.sorvetunesapp
 
-class Produtos {
+import java.io.Serializable
+
+class Produtos: Serializable {
     var id: Long = 0
     var nome = ""
     var descricao = ""

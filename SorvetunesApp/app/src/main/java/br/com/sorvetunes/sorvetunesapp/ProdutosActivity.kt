@@ -53,7 +53,9 @@ class ProdutosActivity : DebugActivity(), NavigationView.OnNavigationItemSelecte
 
     fun onClickProduto(produto: Produtos){
         Toast.makeText(this, "Clicou no produto! ${produto.nome}", Toast.LENGTH_SHORT).show()
-
+        val intent = Intent( this, DetalheProduto::class.java)
+        intent.putExtra("produto", produto)
+        startActivity(intent)
     }
 
 

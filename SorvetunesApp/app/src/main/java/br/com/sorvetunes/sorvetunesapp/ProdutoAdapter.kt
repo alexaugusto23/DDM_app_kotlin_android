@@ -8,6 +8,7 @@ import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
+import com.squareup.picasso.Picasso
 
 class ProdutoAdapter (
     val produtos: List<Produtos>,
@@ -41,6 +42,22 @@ class ProdutoAdapter (
 
         holder.cardNome.text = produto.nome
         holder.cardProcess.visibility = View.VISIBLE
+
+        val contexto = holder.itemView.context
+
+        Picasso.with(contexto).load(produto.foto).fit().into(holder.cardImg,
+                object : com.squareup.picasso.Callback {
+                    override fun onSuccess() {
+                        holder.cardProcess.visibility = View.GONE
+                    }
+
+                    override fun onError() {
+                        holder.cardProcess.visibility = View.GONE
+                        holder.cardImg.setImageResource(R.drawable.img_sorvete_03)
+                    }
+                }
+            )
+
         holder.itemView.setOnClickListener { onclick(produto) }
 
 

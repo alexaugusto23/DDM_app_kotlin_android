@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="br.com.sorvetunes.sorvetunesapp">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,12 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SorvetunesApp">
-        <activity android:name=".PedidosActivity"></activity>
+        <activity android:name=".DetalheProduto"></activity>
+        <activity android:name=".PedidosActivity" />
         <activity android:name=".AdminActivity" />
         <activity
             android:name=".ProdutosActivity"
-            android:theme="@style/Theme.Toolbar"
-            />
+            android:theme="@style/Theme.Toolbar" />
         <activity
             android:name=".SobreActivity"
             android:theme="@style/Theme.Toolbar" />
