@@ -37,4 +37,9 @@
     </string>
     <string name="drawer_open">Aberto</string>
     <string name="drawer_close">Fechado</string>
+
+    <string name="digital">Digital.</string>
+    <string name="guardar">Guardar dados.</string>
+    <string name="switch_admin">Sim</string>
+
 </resources>

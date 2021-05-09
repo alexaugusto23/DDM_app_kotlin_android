@@ -2,6 +2,7 @@ package br.com.sorvetunes.sorvetunesapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_detalhe_produto.*
 import kotlinx.android.synthetic.main.toolbar.*
 
@@ -16,7 +17,7 @@ class DetalheProduto : AppCompatActivity() {
         campo_descricao.text = produto.descricao
         campo_valor_produto.text = produto.valor
 
-
+        Picasso.with(this).load(produto.foto).fit().into(image_produto)
 
 
     }
