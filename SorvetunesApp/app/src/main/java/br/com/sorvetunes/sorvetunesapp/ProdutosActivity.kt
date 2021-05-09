@@ -36,6 +36,7 @@ class ProdutosActivity : DebugActivity(), NavigationView.OnNavigationItemSelecte
         recycleProdutos?.layoutManager = LinearLayoutManager(this)
         recycleProdutos?.itemAnimator = DefaultItemAnimator()
         recycleProdutos?.setHasFixedSize(true)
+        menu_lateral.setCheckedItem(R.id.nav_produtos)
     }
 
     override fun onResume() {
