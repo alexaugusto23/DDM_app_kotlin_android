@@ -13,7 +13,7 @@ class AdminActivity : AppCompatActivity() {
 
         supportActionBar?.title = "Admin"
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        menu_lateral.setCheckedItem(R.id.nav_admin)
+        //menu_lateral.setCheckedItem(R.id.nav_admin)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

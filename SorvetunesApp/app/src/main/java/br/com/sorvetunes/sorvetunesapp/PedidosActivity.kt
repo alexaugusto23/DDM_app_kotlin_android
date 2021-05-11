@@ -13,7 +13,7 @@ class PedidosActivity : AppCompatActivity() {
 
         supportActionBar?.title = "Pedidos"
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        menu_lateral.setCheckedItem(R.id.nav_pedidos)
+        //menu_lateral.setCheckedItem(R.id.nav_pedidos)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
