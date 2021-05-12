@@ -11,6 +11,7 @@ class PedidosActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pedidos)
 
+        //setSupportActionBar(toolbar)
         supportActionBar?.title = "Pedidos"
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         //menu_lateral.setCheckedItem(R.id.nav_pedidos)

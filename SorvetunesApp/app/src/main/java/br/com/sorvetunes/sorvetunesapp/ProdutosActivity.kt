@@ -1,5 +1,6 @@
 package br.com.sorvetunes.sorvetunesapp
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -47,8 +48,13 @@ class ProdutosActivity : DebugActivity(), NavigationView.OnNavigationItemSelecte
     private var produtos = listOf<Produtos>()
 
     private fun taskProdutos(){
-        this.produtos = ProdutosService.getProdutos()
-        recycleProdutos?.adapter = ProdutoAdapter(produtos) {onClickProduto(it)}
+
+        Thread {
+            this.produtos = ProdutosService.getProdutos()
+            runOnUiThread {
+                recycleProdutos?.adapter = ProdutoAdapter(produtos) {onClickProduto(it)}
+            }
+        }.start()
 
     }
 

@@ -12,8 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SorvetunesApp">
         <activity android:name=".DetalheProduto"></activity>
-        <activity android:name=".PedidosActivity" />
-        <activity android:name=".AdminActivity" />
+        <activity android:name=".PedidosActivity"
+                  android:theme="@style/Theme.Toolbar" />
+
+        <activity android:name=".AdminActivity"
+                  android:theme="@style/Theme.Toolbar" />
         <activity
             android:name=".ProdutosActivity"
             android:theme="@style/Theme.Toolbar" />

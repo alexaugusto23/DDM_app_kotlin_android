@@ -11,6 +11,7 @@ class AdminActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_admin)
 
+        //setSupportActionBar(toolbar)
         supportActionBar?.title = "Admin"
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         //menu_lateral.setCheckedItem(R.id.nav_admin)

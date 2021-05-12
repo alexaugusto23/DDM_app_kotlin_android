@@ -1,19 +1,36 @@
 package br.com.sorvetunes.sorvetunesapp
 
+import android.util.Log
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
+import java.net.URL
+
 object ProdutosService {
+
+    val host = "https://fesousa.pythonanywhere.com"
+    val TAG = "APP_SOVERTUNES"
 
     fun getProdutos(): List<Produtos>{
 
-        val produtos = mutableListOf<Produtos>()
-        for (i in 1..10){
-            val d = Produtos()
-            d.nome = "Produto $i"
-            d.descricao = "Descrição $i"
-            d.valor = "Valor $i"
-            d.foto = "https://www.google.com/search?q=sorvetes&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjVguSf-azwAhUGEbkGHW8fBh0Q_AUoAXoECAIQAw&biw=948&bih=603#imgrc=SQNkjEkOYDIFsM"
+        val url = "$host/disciplinas"
+        val json = HttpHelper.get(url)
+        Log.d(TAG, json)
 
-            produtos.add(d)
-        }
+        var produtos = parserJson<ArrayList<Produtos>>(json)
+
         return  produtos
     }
+
+    fun saveProduto(produtos: Produtos){
+        val json = produtos.toJson()
+        HttpHelper.post("$host/disciplinas", json)
+        return 
+    }
+
+    inline fun < reified T> parserJson(json: String):T{
+
+        val type = object: TypeToken<T>(){}.type
+        return Gson().fromJson<T>(json, type)
+    }
+
 }
