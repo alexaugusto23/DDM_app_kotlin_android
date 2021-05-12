@@ -11,12 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SorvetunesApp">
-        <activity android:name=".DetalheProduto"></activity>
-        <activity android:name=".PedidosActivity"
-                  android:theme="@style/Theme.Toolbar" />
-
-        <activity android:name=".AdminActivity"
-                  android:theme="@style/Theme.Toolbar" />
+        <activity android:name=".AdicionaProdutoActivity"></activity>
+        <activity android:name=".DetalheProduto" />
+        <activity
+            android:name=".PedidosActivity"
+            android:theme="@style/Theme.Toolbar" />
+        <activity
+            android:name=".AdminActivity"
+            android:theme="@style/Theme.Toolbar" />
         <activity
             android:name=".ProdutosActivity"
             android:theme="@style/Theme.Toolbar" />

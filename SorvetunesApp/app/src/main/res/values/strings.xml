@@ -41,5 +41,13 @@
     <string name="digital">Digital.</string>
     <string name="guardar">Guardar dados.</string>
     <string name="switch_admin">Sim</string>
+    <string name="formnome">Nome</string>
+    <string name="formdescricao">Descrição</string>
+    <string name="formfoto">Foto</string>
+    <string name="form_valor">Valor</string>
+    <string name="editformnome">Editar Nome</string>
+    <string name="editformdescricao">Editar Descrição</string>
+    <string name="editformfoto">Editar Foto</string>
+    <string name="editformvalor">Editar Valor</string>
 
 </resources>

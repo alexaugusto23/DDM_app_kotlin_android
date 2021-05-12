@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdicionaProdutoActivity">
+
+
+    <TextView
+        android:id="@+id/form_nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="@string/formnome"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="174dp" />
+
+    <EditText
+        android:id="@+id/editText_nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="@string/editformnome"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/form_nome"
+        tools:layout_editor_absoluteX="100dp" />
+
+    <TextView
+        android:id="@+id/form_descricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="@string/formdescricao"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/editText_nome"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/editText_descricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="@string/editformdescricao"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/form_descricao"
+        tools:layout_editor_absoluteX="100dp" />
+
+    <TextView
+        android:id="@+id/form_foto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="@string/formfoto"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/editText_descricao"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/editText_foto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="@string/editformfoto"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/form_foto"
+        tools:layout_editor_absoluteX="100dp" />
+
+    <TextView
+        android:id="@+id/form_valor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="@string/form_valor"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/editText_foto"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/editText_valor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="@string/editformvalor"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/form_valor"
+        tools:layout_editor_absoluteX="100dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

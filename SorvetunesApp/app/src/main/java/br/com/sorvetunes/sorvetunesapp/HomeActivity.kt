@@ -87,7 +87,10 @@ class HomeActivity : DebugActivity(), NavigationView.OnNavigationItemSelectedLis
         val id = item.itemId
 
         if ( id == R.id.nav_bar_search){}
-        else if (id == R.id.nav_bar_add) {}
+        else if (id == R.id.nav_bar_add) {
+            var intent_add = Intent(this, AdicionaProdutoActivity::class.java)
+            startActivity(intent_add)
+        }
         else if (id == R.id.nav_bar_update) {}
         else if (id == R.id.nav_bar_sobre) {
             var intent_sobre = Intent(this, SobreActivity::class.java)
