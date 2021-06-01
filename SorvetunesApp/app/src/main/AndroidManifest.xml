@@ -13,7 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SorvetunesApp">
         <activity android:name=".AdicionaProdutoActivity"></activity>
-        <activity android:name=".DetalheProduto" />
+        <activity
+            android:name=".DetalheProduto"
+            android:theme="@style/Theme.Toolbar"
+            />
         <activity
             android:name=".PedidosActivity"
             android:theme="@style/Theme.Toolbar" />
