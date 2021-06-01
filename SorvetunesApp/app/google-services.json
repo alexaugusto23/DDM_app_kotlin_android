@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "227901779519",
+    "project_id": "sorvetunes-app",
+    "storage_bucket": "sorvetunes-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:227901779519:android:6be18e041eac67f192528a",
+        "android_client_info": {
+          "package_name": "br.com.sorvetunes.sorvetunesapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "227901779519-6f8nm2m7t7lm2mc669kor3peljvg2530.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-iiABUELZRfHyv9ujWBQQciSX7FB01Tk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "227901779519-6f8nm2m7t7lm2mc669kor3peljvg2530.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

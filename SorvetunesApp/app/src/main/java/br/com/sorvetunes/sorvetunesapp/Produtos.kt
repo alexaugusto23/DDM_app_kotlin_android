@@ -1,10 +1,15 @@
 package br.com.sorvetunes.sorvetunesapp
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 import com.google.gson.GsonBuilder
 import java.io.Serializable
 
+@Entity(tableName = "produtos")
 class Produtos: Serializable {
-    var id: Long = 0
+
+    @PrimaryKey
+    var id: Long? = null
     var nome = ""
     var descricao = ""
     var foto = ""

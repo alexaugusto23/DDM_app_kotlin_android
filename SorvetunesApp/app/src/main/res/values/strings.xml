@@ -49,5 +49,6 @@
     <string name="editformdescricao">Editar Descrição</string>
     <string name="editformfoto">Editar Foto</string>
     <string name="editformvalor">Editar Valor</string>
+    <string name="save_button">Salvar</string>
 
 </resources>

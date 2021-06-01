@@ -53,6 +53,10 @@ class ProdutosActivity : DebugActivity(), NavigationView.OnNavigationItemSelecte
             this.produtos = ProdutosService.getProdutos()
             runOnUiThread {
                 recycleProdutos?.adapter = ProdutoAdapter(produtos) {onClickProduto(it)}
+
+            val intent = Intent(this, ProdutosActivity::class.java)
+            intent.putExtra("produto", produtos[0])
+            NotificationUtil.create(1, intent,"SorvetunesApp", "Você tem um novo produto ${produtos[0].nome}")
             }
         }.start()
 

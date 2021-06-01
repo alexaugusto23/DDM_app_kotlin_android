@@ -22,7 +22,11 @@ class HomeActivity : DebugActivity(), NavigationView.OnNavigationItemSelectedLis
         setContentView(R.layout.activity_home)
 
         val args = intent.extras
-        val usuario = args?.getString("usuario")
+        val usuario = Prefs.getString("nome_usuario") //args?.getString("usuario")
+
+
+        Toast.makeText(this, "Prefs: ${usuario}", Toast.LENGTH_LONG).show()
+
         val numero = args?.getString("senha")
 
 
