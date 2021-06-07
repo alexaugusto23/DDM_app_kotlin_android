@@ -17,6 +17,7 @@ import kotlinx.android.synthetic.main.activity_home.layoutMenuLateral
 import kotlinx.android.synthetic.main.activity_home.menu_lateral
 import kotlinx.android.synthetic.main.activity_produtos.*
 import kotlinx.android.synthetic.main.toolbar.*
+import okio.Utf8.size
 
 class ProdutosActivity : DebugActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -51,6 +52,7 @@ class ProdutosActivity : DebugActivity(), NavigationView.OnNavigationItemSelecte
 
         Thread {
             this.produtos = ProdutosService.getProdutos()
+
             runOnUiThread {
                 recycleProdutos?.adapter = ProdutoAdapter(produtos) {onClickProduto(it)}
 
@@ -87,10 +89,10 @@ class ProdutosActivity : DebugActivity(), NavigationView.OnNavigationItemSelecte
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
 
         when(item.itemId){
-            R.id.nav_admin ->{
-                var intent_admin = Intent(this, AdminActivity::class.java)
-                startActivity(intent_admin)
-                Toast.makeText(this, "Clicou no Admin", Toast.LENGTH_SHORT).show()}
+//            R.id.nav_admin ->{
+//                var intent_admin = Intent(this, AdminActivity::class.java)
+//                startActivity(intent_admin)
+//                Toast.makeText(this, "Clicou no Admin", Toast.LENGTH_SHORT).show()}
 
             R.id.nav_produtos -> {
                 var intent_produtos = Intent(this, ProdutosActivity::class.java)
@@ -98,11 +100,11 @@ class ProdutosActivity : DebugActivity(), NavigationView.OnNavigationItemSelecte
                 Toast.makeText(this, "Clicou no Produto", Toast.LENGTH_SHORT).show()
             }
 
-            R.id.nav_pedidos -> {
-                var intent_pedidos = Intent(this, PedidosActivity::class.java)
-                startActivity(intent_pedidos)
-                Toast.makeText(this, "Clicou no Pedido", Toast.LENGTH_SHORT).show()
-            }
+//            R.id.nav_pedidos -> {
+//                var intent_pedidos = Intent(this, PedidosActivity::class.java)
+//                startActivity(intent_pedidos)
+//                Toast.makeText(this, "Clicou no Pedido", Toast.LENGTH_SHORT).show()
+//            }
 
         }
 

@@ -10,6 +10,7 @@ import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.activity_produtos.*
 import kotlinx.android.synthetic.main.activity_produtos.menu_lateral
 import kotlinx.android.synthetic.main.toolbar.*
+import okhttp3.internal.http.RequestLine.get
 
 class DetalheProduto : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,8 +27,9 @@ class DetalheProduto : AppCompatActivity() {
         campo_nome.text = produto.nome
         campo_descricao.text = produto.descricao
         campo_valor_produto.text = produto.valor
+        var url = produto.foto
 
-        Picasso.with(this).load(produto.foto).fit().into(image_produto)
+        Picasso.with(this).load(url).fit().into(image_produto)
 
 
     }

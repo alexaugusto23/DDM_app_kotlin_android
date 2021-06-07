@@ -63,10 +63,10 @@ class HomeActivity : DebugActivity(), NavigationView.OnNavigationItemSelectedLis
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
 
         when(item.itemId){
-            R.id.nav_admin ->{
-                var intent_admin = Intent(this, AdminActivity::class.java)
-                startActivity(intent_admin)
-                Toast.makeText(this, "Clicou no Admin", Toast.LENGTH_SHORT).show()}
+//            R.id.nav_admin ->{
+//                var intent_admin = Intent(this, AdminActivity::class.java)
+//                startActivity(intent_admin)
+//                Toast.makeText(this, "Clicou no Admin", Toast.LENGTH_SHORT).show()}
 
             R.id.nav_produtos -> {
                 var intent_produtos = Intent(this, ProdutosActivity::class.java)
@@ -74,11 +74,11 @@ class HomeActivity : DebugActivity(), NavigationView.OnNavigationItemSelectedLis
                 Toast.makeText(this, "Clicou no Produto", Toast.LENGTH_SHORT).show()
             }
 
-            R.id.nav_pedidos -> {
-                var intent_pedidos = Intent(this, PedidosActivity::class.java)
-                startActivity(intent_pedidos)
-                Toast.makeText(this, "Clicou no Pedido", Toast.LENGTH_SHORT).show()
-            }
+//            R.id.nav_pedidos -> {
+//                var intent_pedidos = Intent(this, PedidosActivity::class.java)
+//                startActivity(intent_pedidos)
+//                Toast.makeText(this, "Clicou no Pedido", Toast.LENGTH_SHORT).show()
+//            }
 
         }
 
@@ -95,15 +95,15 @@ class HomeActivity : DebugActivity(), NavigationView.OnNavigationItemSelectedLis
             var intent_add = Intent(this, AdicionaProdutoActivity::class.java)
             startActivity(intent_add)
         }
-        else if (id == R.id.nav_bar_update) {}
+//        else if (id == R.id.nav_bar_update) {}
         else if (id == R.id.nav_bar_sobre) {
             var intent_sobre = Intent(this, SobreActivity::class.java)
             startActivity(intent_sobre)
         }
-        else if (id == R.id.nav_bar_config) {
-            var intent_config = Intent(this, ConfigActivity::class.java)
-            startActivity(intent_config)
-        }
+//        else if (id == R.id.nav_bar_config) {
+//            var intent_config = Intent(this, ConfigActivity::class.java)
+//            startActivity(intent_config)
+//        }
         else if (id == android.R.id.home) {
             finish()
             //var intent_config = Intent(this, MainActivity::class.java)
@@ -113,9 +113,9 @@ class HomeActivity : DebugActivity(), NavigationView.OnNavigationItemSelectedLis
         when (item.itemId){
             R.id.nav_bar_search -> Toast.makeText(this, "pesquisar", Toast.LENGTH_SHORT).show()
             R.id.nav_bar_add -> Toast.makeText(this, "adicionar", Toast.LENGTH_SHORT).show()
-            R.id.nav_bar_update -> Toast.makeText(this, "atualizar", Toast.LENGTH_SHORT).show()
+//            R.id.nav_bar_update -> Toast.makeText(this, "atualizar", Toast.LENGTH_SHORT).show()
             R.id.nav_bar_sobre -> Toast.makeText(this, "sobre", Toast.LENGTH_SHORT).show()
-            R.id.nav_bar_config -> Toast.makeText(this, "atualizar", Toast.LENGTH_SHORT).show()
+//            R.id.nav_bar_config -> Toast.makeText(this, "atualizar", Toast.LENGTH_SHORT).show()
         }
         return super.onOptionsItemSelected(item)
     }

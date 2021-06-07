@@ -8,7 +8,9 @@ import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
+import br.com.sorvetunes.sorvetunesapp.HttpHelper.get
 import com.squareup.picasso.Picasso
+import java.lang.reflect.Array.get
 
 class ProdutoAdapter (
     val produtos: List<Produtos>,

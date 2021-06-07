@@ -16,11 +16,11 @@
         android:title="Adicionar"
         app:showAsAction="always"/>
 
-    <item
-        android:id="@+id/nav_bar_update"
-        android:icon="@drawable/ic_update"
-        android:title="Atualizar"
-        app:showAsAction="always"/>
+<!--    <item-->
+<!--        android:id="@+id/nav_bar_update"-->
+<!--        android:icon="@drawable/ic_update"-->
+<!--        android:title="Atualizar"-->
+<!--        app:showAsAction="always"/>-->
 
     <item
         android:id="@+id/nav_bar_sobre"
@@ -29,12 +29,12 @@
         app:showAsAction="never"
         android:actionLayout="@color/black"/>
 
-    <item
-        android:id="@+id/nav_bar_config"
-        android:icon="@drawable/ic_config"
-        android:title="Configurações"
-        app:showAsAction="never"
-        android:actionLayout="@color/black"/>
+<!--    <item-->
+<!--        android:id="@+id/nav_bar_config"-->
+<!--        android:icon="@drawable/ic_config"-->
+<!--        android:title="Configurações"-->
+<!--        app:showAsAction="never"-->
+<!--        android:actionLayout="@color/black"/>-->
 
         <!-- android:icon="@drawable" -->
         <!--always, never, iRoom
