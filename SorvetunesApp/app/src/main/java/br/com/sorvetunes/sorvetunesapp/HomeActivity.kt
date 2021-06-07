@@ -14,6 +14,7 @@ import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.toolbar.*
+import java.util.*
 
 
 class HomeActivity : DebugActivity(), NavigationView.OnNavigationItemSelectedListener {
@@ -22,7 +23,7 @@ class HomeActivity : DebugActivity(), NavigationView.OnNavigationItemSelectedLis
         setContentView(R.layout.activity_home)
 
         val args = intent.extras
-        val usuario = Prefs.getString("nome_usuario") //args?.getString("usuario")
+        var usuario = Prefs.getString("nome_usuario")//args?.getString("usuario")
 
 
         Toast.makeText(this, "Prefs: ${usuario}", Toast.LENGTH_LONG).show()
@@ -33,7 +34,7 @@ class HomeActivity : DebugActivity(), NavigationView.OnNavigationItemSelectedLis
         Toast.makeText(this, usuario, Toast.LENGTH_SHORT).show()
         Toast.makeText(this, numero, Toast.LENGTH_SHORT).show()
 
-        user_home.setText("Olá $usuario")
+        user_home.setText("Olá ${usuario.toString().capitalize()}")
 
         button_home.setOnClickListener{
             var intent_home = Intent(this, MainActivity::class.java)

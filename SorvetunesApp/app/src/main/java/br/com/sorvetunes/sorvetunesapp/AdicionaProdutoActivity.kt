@@ -13,6 +13,7 @@ class AdicionaProdutoActivity : AppCompatActivity() {
         supportActionBar?.title = "Adicionar"
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
+
         salvar_produto.setOnClickListener {
             val produtos = Produtos()
             produtos.nome = editText_nome.text.toString()
@@ -22,6 +23,7 @@ class AdicionaProdutoActivity : AppCompatActivity() {
 
             taskAtualizar(produtos)
         }
+
     }
     //
 

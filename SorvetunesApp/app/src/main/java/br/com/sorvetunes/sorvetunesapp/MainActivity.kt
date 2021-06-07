@@ -46,7 +46,7 @@ class MainActivity : DebugActivity() {
         parametros.putString("senha", password)
         if (user.equals("") && password.equals("")){
             Toast.makeText(this, "Usuário e Senha vazios, digite um valor válido para realizar Login !", Toast.LENGTH_LONG).show()
-        } else if (user.equals("aluno") && password.equals("impacta")){
+        } else if (user.equals("sorvetunes") && password.equals("sorvete")){
             Toast.makeText(this, "Login Efetuado!", Toast.LENGTH_SHORT).show()
             intent.putExtras(parametros)
             //intent.putExtra("double", 1.75)
